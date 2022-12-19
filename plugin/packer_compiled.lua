@@ -129,6 +129,11 @@ _G.packer_plugins = {
     path = "/home/wendy/.local/share/nvim/site/pack/packer/start/impatient.nvim",
     url = "https://github.com/lewis6991/impatient.nvim"
   },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/home/wendy/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
   ["leap.nvim"] = {
     loaded = true,
     path = "/home/wendy/.local/share/nvim/site/pack/packer/start/leap.nvim",

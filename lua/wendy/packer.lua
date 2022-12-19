@@ -31,6 +31,7 @@ return require('packer').startup(function(use)
             { 'jose-elias-alvarez/null-ls.nvim' },
 
 
+
             -- Autocompletion
             { 'hrsh7th/nvim-cmp' },
             { 'hrsh7th/cmp-buffer' },
@@ -50,5 +51,6 @@ return require('packer').startup(function(use)
     use("numToStr/Comment.nvim")
     use("ggandor/leap.nvim")
     use("lewis6991/impatient.nvim")
+    use("lukas-reineke/indent-blankline.nvim")
 
 end)
