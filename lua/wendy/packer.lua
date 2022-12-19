@@ -52,5 +52,6 @@ return require('packer').startup(function(use)
     use("ggandor/leap.nvim")
     use("lewis6991/impatient.nvim")
     use("lukas-reineke/indent-blankline.nvim")
+    use("max397574/better-escape.nvim")
 
 end)
