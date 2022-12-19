@@ -45,6 +45,11 @@ return require('packer').startup(function(use)
             { 'rafamadriz/friendly-snippets' },
         }
     }
+    --Lightbulb for LSPuse {
+    use {
+        'kosayoda/nvim-lightbulb',
+        requires = 'antoinemadec/FixCursorHold.nvim',
+    }
 
     use("folke/zen-mode.nvim")
     use("github/copilot.vim")
