@@ -59,6 +59,10 @@ return require('packer').startup(function(use)
     use("lukas-reineke/indent-blankline.nvim")
     use("max397574/better-escape.nvim")
     use("stevearc/aerial.nvim")
+    use("junegunn/vim-peekaboo")
+    use("tpope/vim-surround")
+    use("tpope/vim-repeat")
+
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
