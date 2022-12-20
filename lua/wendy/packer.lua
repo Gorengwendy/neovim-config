@@ -6,21 +6,7 @@ vim.cmd.packadd('packer.nvim')
 return require('packer').startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
-    use 'sainnhe/sonokai'
-
-    use {
-        'nvim-telescope/telescope.nvim', tag = '0.1.0',
-        -- or                            , branch = '0.1.x',
-        requires = { { 'nvim-lua/plenary.nvim' } }
-    }
-
-
-    use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
-    use('nvim-treesitter/playground')
-    use('theprimeagen/harpoon')
-    use('mbbill/undotree')
-    use('tpope/vim-fugitive')
-
+    -- LSP Zero setup
     use {
         'VonHeikemen/lsp-zero.nvim',
         requires = {
@@ -45,27 +31,44 @@ return require('packer').startup(function(use)
             { 'rafamadriz/friendly-snippets' },
         }
     }
-    --Lightbulb for LSPuse {
+    -- LSP Related
+    use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
+    use('nvim-treesitter/playground')
     use {
         'kosayoda/nvim-lightbulb',
         requires = 'antoinemadec/FixCursorHold.nvim',
     }
 
-    use("folke/zen-mode.nvim")
-    use("github/copilot.vim")
+    -- Nice to have
     use("numToStr/Comment.nvim")
-    use("ggandor/leap.nvim")
-    use("lewis6991/impatient.nvim")
-    use("lukas-reineke/indent-blankline.nvim")
     use("max397574/better-escape.nvim")
+    use("tpope/vim-repeat")
+    use("tpope/vim-surround")
+    use('mbbill/undotree')
+
+    -- Navigation
+    use("ggandor/leap.nvim")
     use("stevearc/aerial.nvim")
     use("junegunn/vim-peekaboo")
-    use("tpope/vim-surround")
-    use("tpope/vim-repeat")
+    use {
+        'nvim-telescope/telescope.nvim', tag = '0.1.0',
+        -- or                            , branch = '0.1.x',
+        requires = { { 'nvim-lua/plenary.nvim' } }
+    }
+    use('theprimeagen/harpoon')
 
+    -- Aesthetics
+    use 'sainnhe/sonokai'
+    use("lukas-reineke/indent-blankline.nvim")
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     }
+
+    -- Other
+    use('tpope/vim-fugitive')
+    use("lewis6991/impatient.nvim")
+    use("github/copilot.vim")
+    use("folke/zen-mode.nvim")
 
 end)
