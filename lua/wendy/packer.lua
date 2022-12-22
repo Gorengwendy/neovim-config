@@ -38,6 +38,8 @@ return require('packer').startup(function(use)
         'kosayoda/nvim-lightbulb',
         requires = 'antoinemadec/FixCursorHold.nvim',
     }
+    use('jwalton512/vim-blade')
+    use('mattn/emmet-vim')
 
     -- Nice to have
     use("numToStr/Comment.nvim")
@@ -45,6 +47,7 @@ return require('packer').startup(function(use)
     use("tpope/vim-repeat")
     use("tpope/vim-surround")
     use('mbbill/undotree')
+    use('windwp/nvim-autopairs')
 
     -- Navigation
     use("ggandor/leap.nvim")
