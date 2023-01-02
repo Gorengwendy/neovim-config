@@ -40,6 +40,7 @@ return require('packer').startup(function(use)
     }
     use('jwalton512/vim-blade')
     use('mattn/emmet-vim')
+    use('ahmedkhalf/project.nvim')
 
     -- Nice to have
     use("numToStr/Comment.nvim")
