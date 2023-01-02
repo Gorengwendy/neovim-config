@@ -34,10 +34,6 @@ return require('packer').startup(function(use)
     -- LSP Related
     use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
     use('nvim-treesitter/playground')
-    use {
-        'kosayoda/nvim-lightbulb',
-        requires = 'antoinemadec/FixCursorHold.nvim',
-    }
     use('jwalton512/vim-blade')
     use('mattn/emmet-vim')
     use('ahmedkhalf/project.nvim')
