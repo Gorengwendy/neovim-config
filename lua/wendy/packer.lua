@@ -37,7 +37,6 @@ return require('packer').startup(function(use)
     use('jwalton512/vim-blade')
     use('mattn/emmet-vim')
     use('ahmedkhalf/project.nvim')
-
     -- Nice to have
     use("numToStr/Comment.nvim")
     use("max397574/better-escape.nvim")
@@ -56,6 +55,10 @@ return require('packer').startup(function(use)
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
     use('theprimeagen/harpoon')
+    use {
+        "folke/trouble.nvim",
+        requires = "kyazdani42/nvim-web-devicons"
+    }
 
     -- Aesthetics
     use 'sainnhe/sonokai'
