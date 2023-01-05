@@ -12,6 +12,7 @@ vim.opt.autoindent = true
 -- vim.opt.smartindent = true
 
 vim.opt.wrap = true
+vim.opt.guifont = "FiraCode Nerd Font:h12"
 
 vim.opt.swapfile = false
 vim.opt.backup = false
