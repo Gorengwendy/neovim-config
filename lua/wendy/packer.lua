@@ -59,6 +59,7 @@ return require('packer').startup(function(use)
         "folke/trouble.nvim",
         requires = "kyazdani42/nvim-web-devicons"
     }
+    use {'nvim-telescope/telescope-ui-select.nvim' }
 
     -- Aesthetics
     use 'sainnhe/sonokai'
