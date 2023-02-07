@@ -52,7 +52,6 @@ return require('packer').startup(function(use)
         use("ggandor/leap.nvim")
         use("stevearc/aerial.nvim")
         use("junegunn/vim-peekaboo")
-        use('mrjones2014/smart-splits.nvim')
         use {
             'nvim-telescope/telescope.nvim', tag = '0.1.0',
             -- or                            , branch = '0.1.x',
