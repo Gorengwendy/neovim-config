@@ -74,8 +74,6 @@ require('smart-splits').move_cursor_right(same_row)
 -- smart resize left, down, up, and right, respectively,
 -- press <ESC> to stop resize mode (unless you've set a different key in config)
 -- resize keys also accept a range, e.e. pressing `5j` will resize down 5 times the default_amount
-require('smart-splits').start_resize_mode()
-
 -- recommended mappings
 -- resizing splits
 -- these keymaps will also accept a range,

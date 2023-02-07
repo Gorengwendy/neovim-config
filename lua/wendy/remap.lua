@@ -10,6 +10,10 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
+-- Buffer Navigation
+vim.keymap.set("n", "<C-l>", "<cmd>bnext<CR>")
+vim.keymap.set("n", "<C-h>", "<cmd>bprevious<CR>")
+vim.keymap.set("n", "<leader>c", "<cmd>bdelete<CR>")
 
 -- greatest remap ever
 vim.keymap.set("x", "<leader>p", [["_dP]])
