@@ -52,6 +52,8 @@ return require('packer').startup(function(use)
     use("tpope/vim-surround")
     use('mbbill/undotree')
     use('windwp/nvim-autopairs')
+    use('lewis6991/gitsigns.nvim')
+    use('kdheepak/lazygit.nvim')
 
     -- Navigation
     -- using packer.nvim
@@ -81,7 +83,7 @@ return require('packer').startup(function(use)
     }
 
     -- Other
-    use('tpope/vim-fugitive')
+    -- use('tpope/vim-fugitive')
     use("lewis6991/impatient.nvim")
     use("github/copilot.vim")
     use("folke/zen-mode.nvim")
