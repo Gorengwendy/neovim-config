@@ -34,7 +34,6 @@ return require('packer').startup(function(use)
     -- LSP Related
     use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
     use('nvim-treesitter/playground')
-    use('jwalton512/vim-blade')
     use('mattn/emmet-vim')
     use('ahmedkhalf/project.nvim')
     use {
@@ -57,11 +56,7 @@ return require('packer').startup(function(use)
 
     -- Navigation
     -- using packer.nvim
-    use { 'akinsho/bufferline.nvim', tag = "v3.*",
-        requires = 'nvim-tree/nvim-web-devicons' }
     use("ggandor/leap.nvim")
-    use("stevearc/aerial.nvim")
-    use("junegunn/vim-peekaboo")
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.0',
         -- or                            , branch = '0.1.x',
@@ -85,6 +80,7 @@ return require('packer').startup(function(use)
     -- Other
     -- use('tpope/vim-fugitive')
     use("lewis6991/impatient.nvim")
+    use("junegunn/vim-peekaboo")
     use("github/copilot.vim")
     use("folke/zen-mode.nvim")
 end)
